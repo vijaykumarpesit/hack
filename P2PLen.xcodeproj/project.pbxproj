@@ -14,7 +14,7 @@
 		54709A861ECDFAF500B8359E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54709A841ECDFAF500B8359E /* LaunchScreen.storyboard */; };
 		54709A911ECDFAF500B8359E /* P2PLenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54709A901ECDFAF500B8359E /* P2PLenTests.m */; };
 		54709A9C1ECDFAF500B8359E /* P2PLenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54709A9B1ECDFAF500B8359E /* P2PLenUITests.m */; };
-		B1C1A61D1ECE0F7C00C9AE89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1C1A61C1ECE0F7C00C9AE89 /* GoogleService-Info.plist */; };
+		B1E06CE31ECF2FEF00CFD08E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1E06CE21ECF2FEF00CFD08E /* GoogleService-Info.plist */; };
 		EA5BD476E2DAC2D1B61D7F48 /* libPods-P2PLen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DCC39EFD76D50384AD49F0B /* libPods-P2PLen.a */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,8 @@
 		54709A9B1ECDFAF500B8359E /* P2PLenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P2PLenUITests.m; sourceTree = "<group>"; };
 		54709A9D1ECDFAF500B8359E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7433ED7A66D32FED886201C2 /* Pods-P2PLen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P2PLen.release.xcconfig"; path = "Pods/Target Support Files/Pods-P2PLen/Pods-P2PLen.release.xcconfig"; sourceTree = "<group>"; };
-		B1C1A61C1ECE0F7C00C9AE89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1E06CE21ECF2FEF00CFD08E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1E06CE41ECF30F200CFD08E /* P2PLen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = P2PLen.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +117,10 @@
 		54709A751ECDFAF500B8359E /* P2PLen */ = {
 			isa = PBXGroup;
 			children = (
+				B1E06CE41ECF30F200CFD08E /* P2PLen.entitlements */,
+				B1E06CE21ECF2FEF00CFD08E /* GoogleService-Info.plist */,
 				54709A791ECDFAF500B8359E /* AppDelegate.h */,
 				54709A7A1ECDFAF500B8359E /* AppDelegate.m */,
-				B1C1A61C1ECE0F7C00C9AE89 /* GoogleService-Info.plist */,
 				54709A7F1ECDFAF500B8359E /* Main.storyboard */,
 				54709A821ECDFAF500B8359E /* Assets.xcassets */,
 				54709A841ECDFAF500B8359E /* LaunchScreen.storyboard */,
@@ -232,8 +234,13 @@
 				TargetAttributes = {
 					54709A721ECDFAF500B8359E = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = S62Z5886G5;
+						DevelopmentTeam = 8UB24XC54S;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					54709A8B1ECDFAF500B8359E = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -273,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54709A861ECDFAF500B8359E /* LaunchScreen.storyboard in Resources */,
-				B1C1A61D1ECE0F7C00C9AE89 /* GoogleService-Info.plist in Resources */,
+				B1E06CE31ECF2FEF00CFD08E /* GoogleService-Info.plist in Resources */,
 				54709A831ECDFAF500B8359E /* Assets.xcassets in Resources */,
 				54709A811ECDFAF500B8359E /* Main.storyboard in Resources */,
 			);
@@ -501,10 +508,11 @@
 			baseConfigurationReference = 5211E01B3F48663DABC0547F /* Pods-P2PLen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S62Z5886G5;
+				CODE_SIGN_ENTITLEMENTS = P2PLen/P2PLen.entitlements;
+				DEVELOPMENT_TEAM = 8UB24XC54S;
 				INFOPLIST_FILE = P2PLen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = airtel.P2PLen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsb.hike.encryption;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -514,10 +522,11 @@
 			baseConfigurationReference = 7433ED7A66D32FED886201C2 /* Pods-P2PLen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S62Z5886G5;
+				CODE_SIGN_ENTITLEMENTS = P2PLen/P2PLen.entitlements;
+				DEVELOPMENT_TEAM = 8UB24XC54S;
 				INFOPLIST_FILE = P2PLen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = airtel.P2PLen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsb.hike.encryption;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

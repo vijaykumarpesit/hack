@@ -7,5 +7,7 @@ target 'P2PLen' do
   # Pods for P2PLen
 
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
+
 
 end

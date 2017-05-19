@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>766249435720-b9b8ep1ajqc22ti9e6d485d087kl98ri.apps.googleusercontent.com</string>
+	<string>766249435720-fk00mraoiftvqumsmjijfa6chh9nq280.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.766249435720-b9b8ep1ajqc22ti9e6d485d087kl98ri</string>
+	<string>com.googleusercontent.apps.766249435720-fk00mraoiftvqumsmjijfa6chh9nq280</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAHLdabagveR5j2AP82Ky-iSyGFk8Uxxc8</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.vijay.airtelHack</string>
+	<string>com.bsb.hike.encryption</string>
 	<key>PROJECT_ID</key>
 	<string>p2plending-8c8ec</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:766249435720:ios:2c447a63b1a981d5</string>
+	<string>1:766249435720:ios:c801094444cba9bb</string>
 	<key>DATABASE_URL</key>
 	<string>https://p2plending-8c8ec.firebaseio.com</string>
 </dict>
