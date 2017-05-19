@@ -8,6 +8,7 @@ target 'P2PLen' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'FirebaseUI/Phone', '~> 4.0'
 
 
 end
